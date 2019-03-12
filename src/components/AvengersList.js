@@ -8,7 +8,7 @@ const AvengersList = ({ avengers }) => {
 
 const getAvengers = avengers => {
     console.log(avengers);
-   const avengerTags = avengers.map(avenger => <Avenger avenger={avenger} />);
+   const avengerTags = avengers.map(avenger => <Avenger key={avenger} avenger={avenger} />);
 
    return avengerTags;
 }
